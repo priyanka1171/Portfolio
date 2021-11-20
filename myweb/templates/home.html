@@ -1,0 +1,267 @@
+{% load static %}
+<html>
+<head><title>Priyanka Sanap's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+.heading{
+text-align:center;
+color:blue;
+}
+* {
+  box-sizing: border-box;
+  
+}
+
+.about{
+  box-sizing: border-box;
+  box-shadow:10px 10px 5px rgb(59, 58, 58) ;
+  background-color: #045F5F;
+  color: white;
+   width: 250px;
+  height: 50px;
+  padding: 10px 10px 10px 15px;
+  border: 2px solid white;
+}
+.skil{
+  box-sizing: border-box;
+  box-shadow:10px 10px 5px rgb(59, 58, 58) ;
+  background-color: #045F5F;
+  color: white;
+   width: 250px;
+  height: 50px;
+  padding: 10px 10px 10px 15px;
+  border: 2px solid white;
+}
+.intern{
+  box-sizing: border-box;
+  box-shadow:10px 10px 5px rgb(59, 58, 58) ;
+  background-color: #045F5F;
+  color: white;
+   width: 250px;
+  height: 50px;
+  padding: 10px 10px 10px 15px;
+  border: 2px solid white;
+
+}
+.pic{
+  float: right;
+ 
+}
+
+img{
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow:10px 10px 5px #ccc ;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url('https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/thumbimg_25337903thumbejpg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-image: linear-gradient(to right, #8EEBEC,white,white,white);
+}
+
+/* Style the header */
+header {
+  background-color:#3B9C9C;
+  
+  text-align: center;
+  padding: 25px 50px 75px 100px;
+  color: white;
+  height: 40px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 25%;
+  height: 900px; /* only for demonstration, should be removed */
+  background:grey;
+  padding: 30px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:#3B9C9C;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(17, 17, 17, 0.534);
+}
+table{
+  width: 30%;
+  height: 20%;
+}
+
+
+</style>
+</head>
+<body>
+  
+
+<div class="headr">
+
+</div>
+<header>
+  <ul>
+    <li><a class="active" href="{% url 'course' %}" > Course Certificates</a></li>
+    <li><a href="{% url 'intern' %}" >Internship Certificate</a></li>
+    <li><a href="https://github.com/priyanka1171" target="_blank">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/priyanka-sanap-25b78917b" target="_blank">Linkedin</a></li>
+    <li><a href="https://mobile.twitter.com/PriyankaSanap11" target="_blank">Twitter</a></li>
+    <li><a href="https://www.instagram.com/priyankasanap1171/" target="_blank">Instagram</a></li>
+  </ul>
+</header>
+<!-- <section> -->
+  <!-- <nav>
+    <ul>
+      <li><img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-4.jpg" width="50px" height="50px"><br><a href="https://github.com/priyanka1171">GitHub</a></li><br><br><br><br><br><br>
+      <li><img src="https://w7.pngwing.com/pngs/887/616/png-transparent-linkedin-icon-linkedin-text-rectangle-logo.png" width="50px" height="50px"><br><a href="https://www.linkedin.com/in/priyanka-sanap-25b78917b">Linkedin</a></li><br><br><br><br><br><br>
+      <li><img src="https://www.clipartmax.com/png/middle/251-2517877_tweet-twitter-icon-icon-chirrup-icon-icon-twitter-png-format-twitter-logo.png" width="50px" height="50px"><br><a href="https://mobile.twitter.com/PriyankaSanap11">Twitter</a></li><br><br><br><br><br><br>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="50px" height="50px"><br><a href="https://www.instagram.com/priyankasanap1171/">Instagram</a></li>
+    </ul>
+  </nav> -->
+
+  <!-- <article> -->
+
+    <img src="{%static 'images/Mypic.jpeg'%}" class="pic" width="250px" height="250px" >
+    <h1 style="font-family:cursive;color: #0f3e03;" class="me">Hello,<br>Myself Priyanka Sanap,<br>Currently studying in Terna College of Engineering, Nerul <br>Information Technology Branch </h1>
+    <br>  <br>  <br>
+    <h1 class="about">About me</h1>
+    <h3 style="font-family:cursive; border: 5px solid white;background-color: rgba(128, 0, 128, 0.315);width: 660px;height:200px;padding: 10px;">I am student of <a href="https://ternaengg.ac.in/#" target="_blank">Terna college of Engineering</a> persuing Information Technology.Aims to be able to find an challenging<br> entrylevel position in the Information and Technology industry alongside acompany who will continuously motivate and<br> drive me to do my bestand improve my skills and abilities in order to able to assist thecompany in achieving goals and missions.</h3>
+    <br><br> 
+
+
+    <h1 class="skil">Skills</h1>
+    <ol><b>
+
+    <li><h1><u> HTML</u></h1><br><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="190px" height="190px"><br>
+      <ul list-style-type="disk">
+      <li><h3 style="font-family:cursive;">The HyperText Markup Language, or HTML is<br>
+       the standard markup language for documents designed to be displayed in a web browser.</h3></li>
+    </ul>
+    </li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h4 style="font-family:cursive;"><a href="https://html.com/">Learn more about HTML</a></h4><br><br><br><br><br>
+    
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <li><h1><u>CSS</u></h1><br><img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" width="190px" height="190px"><br>
+      <ul list-style-type="disk">
+      <li><h3 style="font-family:cursive;">Cascading Style Sheets (CSS) is a style sheet language used for describing the<br>
+         presentation of a document written in a markup language such as HTML.
+          </h3></li><br>
+    </ul></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h4 style="font-family:cursive;"><a href="https://www.w3.org/Style/CSS/Overview.en.html">Learn more about CSS</a></h4><br><br>
+    <br><br><br>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <li><h1><u>Python and Data Science</u></h1><br><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" width="190px" height="190px"><br>
+      <ul list-style-type="disk">
+      <li><h3 style="font-family:cursive;">Python is an interpreted, object-oriented, high-level programming<br>
+         language with dynamic semantics. Its high-level built in data structures, combined with dynamic <br>
+         typing and dynamic binding, make it very attractive for Rapid Application Development,<br>
+          as well as for use as a scripting or glue language to connect 
+          existing components together.</h3></li>
+    </ul></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h4 style="font-family:cursive;"><a href="https://www.python.org/">Learn more about Python</a></h4><br><br><br><br><br>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <li><h1><u>Django and Rest API</u></h1><br><img src="https://webclassicsolutions.com/wp-content/uploads/2020/04/Django-Development-Services.png" width="190px" height="190px"><br>
+      <ul list-style-type="disk">
+      <li><h3 style="font-family:cursive;">Django is a high-level Python web framework that
+         enables rapid<br> development of secure and maintainable websites.</h3></li>
+    </ul></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h4 style="font-family:cursive;"><a href="https://www.djangoproject.com/">Learn more about Django</a></h4>
+   
+  </b></ol>
+<br>
+<h1 class="intern">Internship</h1>
+<h2><u>Trivia Softwares</u></h2>
+
+<h3 style="font-family:cursive;">Role : "Python Developer Intern"</h3>
+<h3 style="font-family:cursive;">From 25 May 2021 to 25 June 2021</h3>
+<h3 style="font-family:cursive;">Project : "Student Management System"</h3>
+
+<h4 style="font-family:cursive;"><a href="https://triviasoftwares.in/">Learn more Trivia Software</a></h4>
+<br>
+  <!-- </article>
+</section> -->
+<!-- <div class="fot" style="background-color: black;">
+<p>Footer</p><br>
+</div> -->
+
+<footer>
+  <center>
+  <form method="POST">
+    {% csrf_token %}
+    <br>
+    <p>Please give Your valuable feedback!!!!</p>
+    <table border="2" >
+      {{ fm.as_table }}
+    </table>
+    <br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+	{{ msg }}
+  </center>
+ 
+</footer>
+
+
+
+</body>
+</html>
